@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />"
+        <link rel="stylesheet" href="style.css">
+        <title>Landon's Academics</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#"></a></div>
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Landon</a></li>
+                    <li><a href="academic.html">Academics</a></li>
+                    <li><a href="athletic.html">Athletics</a></li>
+                    <li><a href="extra.html">Extracurriculars</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                </ul>
+                <a href="#" class="action_btn">Landon Wharton</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Landon</a></li>
+                <li><a href="academic.html">Academics</a></li>
+                <li><a href="athletic.html">Athletics</a></li>
+                <li><a href="extra.html">Extracurriculars</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="#" class="action_btn">Example</a></li>
+            </div>
+        </header>
+        <main>
+            <section id="academic">
+                <h1>GPA and Test Scores</h1>
+                <br>
+                <br>
+                <h2>GPA</h2>
+                <p><b>3.933</b> (Unweighted, four-point scale)</p>
+                <br>
+                <br>
+                <h2>SAT</h3>
+                <p>Overall: <b>1270</b> - Reading and Writing: <b>620</b> - Math: <b>650</b> - Essay: <b>20.</b> </p>
+                <br>
+                <p><b>79th percentile</b> for South Lyon High School</p>
+                <p><b>90th percentile</b> for the state of Michigan</p>
+                <p><b>83rd percentile</b> for the United States</p>
+                <br>
+                <br>
+                <h2>AP®</h2>
+                <p>AP Calculus AB - Score: <b>4</b></p>
+                <p>AP Microeconomics - Score: <b>4</b></p>
+                <p>AP Statistics - Score: <b>N/A</b></p>
+                <p>AP Spanish Language - Score: <b>N/A</b></p>
+                <p>AP Calculus BC - Score: <b>N/A</b></p>
+                <p>AP Macroeconomics - Score: <b>N/A</b></p>
+                <br>
+                <br>
+                <br>
+                <h1>Academic Recognitions and Awards</h1>
+                <br>
+                <br>
+                <h2>Academic Varsity Letter</h2>
+                <p>Received an academic varsity letter for three years in a row.</p>
+                <br>
+                <br>
+                <h2>Honor Roll</h2>
+                <p>Made the honor roll three years in a row.</p>
+                <br>
+                <br>
+                <h2>Principal's List</h2>
+                <p>Made the principal's list three years in a row.</p>
+                <br>
+                <br>
+                <h2>Gold Academic Medal</h2>
+                <p>Received a golden academic medal for three years in a row.</p>
+                <br>
+                <br>
+                <h2>Academic Varsity Letter</h2>
+                <p>Received an academic varsity letter for three years in a row.</p>
+                <br>
+                <br>
+                <h2>Classroom Awards of Excellence</h2>
+                <p>Observed classroom excellence in Spanish 2, Spanish 3, Foundations of Health and PE, and World Studies.</p>
+                <br>
+                <br>
+                <h2>Lakes Valley Conference (LVC) Scholar Athlete Patch</h2>
+                <p>Received a patch for having good grades during my swim season freshman year.</p>
+            </section>
+        </main>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />"
+        <link rel="stylesheet" href="style.css">
+        <title>Landon's Academics</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#"></a></div>
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Landon</a></li>
+                    <li><a href="academic.html">Academics</a></li>
+                    <li><a href="athletic.html">Athletics</a></li>
+                    <li><a href="extra.html">Extracurriculars</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                </ul>
+                <a href="#" class="action_btn">Landon Wharton</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Landon</a></li>
+                <li><a href="academic.html">Academics</a></li>
+                <li><a href="athletic.html">Athletics</a></li>
+                <li><a href="extra.html">Extracurriculars</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="#" class="action_btn">Example</a></li>
+            </div>
+        </header>
+        <main>
+            <section id="academic">
+                <h1>Sports</h1>
+                <br>
+                <br>
+                <h2>High School Swim and Dive</h2>
+                <p>I was a varsity swimmer for all years of high school swim, and plan to my senior year as well, with also having the goals to be team captain.</p>
+                <br>
+                <br>
+                <h2>South Lyon Aquatics</h2>
+                <p>I've swam on South Lyon Aquatics (my local recreational swim team) for over 6 years, currently swimming in the most experienced, challenging group.</p>
+                <br>
+                <br>
+                <h2>Woodland Rangers Bowling</h2>
+                <p>I was a bowler for the Saturday morning youth league at Woodland Lanes in Livonia, MI. I have bowled since I was in kindergarten, but quit the sport my sophomore year to pursue swim.</p>
+                <br>
+                <br>
+                <br>
+                <h1>School Clubs</h1>
+                <br>
+                <br>
+                <h2>National Honor Society</h2>
+                <p>I am a member of the National Honor Society for my school, and have been since my junior year. I have volunteered for over 50 hours currently and have raised over $500 in the group for my community.</p>
+                <br>
+                <br>
+                <h2>Key Club</h2>
+                <p>I am a member of Key Club for my school, and have been since my junior year. I have volunteered for over 20 hours currently, and plan to continue to grow this number throughout senior year.</p>
+                <br>
+                <br>
+                <h2>DECA</h2>
+                <p>I am a member of DECA, and joined the group this year. My event is Personal Financial Literacy, which I strive to qualify for the state competition with.</p>
+                <br>
+                <br>
+                <br>
+                <h1>Religious</h1>
+                <br>
+                <br>
+                <h2>Youth Group</h2>
+                <p>I attend a two hour youth group at St. Patrick's Catholic Church in Brighton, MI. I attend almost every Sunday evening, and through it, develop a deeper understanding of Catholicism and the Bible.</p>
+                <br>
+                <br>
+                <h2>OCIA (RCIA)</h2>
+                <p>I am enrolled in classes to be fully confirmed into the Catholic church! This happens most Sundays for around three hours, and I am really excited to be on this journey!</p>
+                <br>
+                <br>
+                <h2></h2>
+            </section>
+        </main>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+    </body>
+</html>

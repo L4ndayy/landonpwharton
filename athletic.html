@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />"
+        <link rel="stylesheet" href="style.css">
+        <title>Landon's Academics</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#"></a></div>
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Landon</a></li>
+                    <li><a href="academic.html">Academics</a></li>
+                    <li><a href="athletic.html">Athletics</a></li>
+                    <li><a href="extra.html">Extracurriculars</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                </ul>
+                <a href="#" class="action_btn">Landon Wharton</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Landon</a></li>
+                <li><a href="academic.html">Academics</a></li>
+                <li><a href="athletic.html">Athletics</a></li>
+                <li><a href="extra.html">Extracurriculars</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="#" class="action_btn">Example</a></li>
+            </div>
+        </header>
+        <main>
+            <section id="academic">
+                <h1>Sports Teams</h1>
+                <br>
+                <br>
+                <h2>High School</h2>
+                <p>South Lyon Unified Boys Swim and Dive</p>
+                <br>
+                <br>
+                <h2>Recreational</h3>
+                <p>South Lyon Aquatics (SLA)</p>
+                <p>Woodland Rangers Saturday Morning Bowling League</p>
+                <br>
+                <br>
+                <br>
+                <h1>Athletic Recognitions and Awards</h1>
+                <br>
+                <br>
+                <h2>Swimming Varsity Letter</h2>
+                <p>Received a swimming varsity letter for three years in a row.</p>
+                <br>
+                <br>
+                <h2>2nd Year Varisty Medal</h2>
+                <p>Recieved a medal for my second completed swim season on the varsity team.</p>
+                <br>
+                <br>
+                <h2>3rd Year Varsity Plaque</h2>
+                <p>Recieved a plaque for my third completed swim season on the varsity team.</p>
+                <br>
+                <br>
+                <h2>LVC All-Conference Letter</h2>
+                <p>Received an all-conference letter for achieving podium in the conference high school swim meet.</p>
+                <br>
+                <br>
+                <h2>LVC Medals</h2>
+                <p>Received several medals for placing podium in the conference high school swim meet.</p>
+                <br>
+                <br>
+                <h2>Regional Championship Medal</h2>
+                <p>Recieved a medal for placing podium in the regional meet for South Lyon Aquatics.</p>
+            </section>
+        </main>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+    </body>
+</html>
