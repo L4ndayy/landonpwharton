@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />"
+        <link rel="stylesheet" href="style.css">
+        <title>About Landon</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#"></a></div>
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Landon</a></li>
+                    <li><a href="academic.html">Academics</a></li>
+                    <li><a href="athletic.html">Athletics</a></li>
+                    <li><a href="extra.html">Extracurriculars</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                </ul>
+                <a href="#" class="action_btn">Landon Wharton</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Landon</a></li>
+                <li><a href="academic.html">Academics</a></li>
+                <li><a href="athletic.html">Athletics</a></li>
+                <li><a href="extra.html">Extracurriculars</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="#" class="action_btn">Example</a></li>
+            </div>
+        </header>
+        <main>
+            <section id="about">
+<div class="container">
+  <h1>Donate to SL DECA!</h1>
+  <p>We are using Snap! Mobile to collect donations. You will need to submit your <b>email address</b> for Landon to add to the donation invites. After submitting, you should recieve information on how to donate to DECA through your email.</p>
+  <br>
+  <p><b>Notice: </b>It may take some time before you are sent donation information.
+  <form target="_blank" action="https://formsubmit.co/landonwharton06@gmail.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Email and Name</button>
+  </form>
+</div>
+            </section>
+        </main>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+    </body>
+</html>
