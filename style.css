@@ -185,7 +185,7 @@ section#home {
     justify-content: center;
     text-align: center;
     color: #fff;
-    padding: 100px;
+    padding: 50px;
 }
 
 section#index {
@@ -196,7 +196,7 @@ section#index {
     justify-content: center;
     text-align: center;
     color: #fff;
-    padding: 100px;
+    padding: 50px;
 }
 
 #index h1 {
@@ -215,7 +215,7 @@ section#academic {
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    padding: 100px;
+    padding: 50px;
 }
 
 #academic h1 {
@@ -231,7 +231,7 @@ section#about {
     justify-content: center;
     text-align: center;
     color: #fff;
-    padding: 100px;
+    padding: 50px;
 }
 
 #about h1 {
@@ -247,7 +247,7 @@ section#project {
     justify-content: center;
     text-align: center;
     color: #fff;
-    padding: 100px;
+    padding: 50px;
 }
 
 .custom-btn {
